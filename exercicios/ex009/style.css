@@ -1,0 +1,35 @@
+@charset "UTD-8";
+
+body {
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: blue;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: black;
+}
+
+h2 {
+    color: blue;
+}
+
+.basico {
+    color: red;
+}
+
+.intermediario {
+    color: green;
+}
+
+.avancado {
+    color: gold;
+}
+
+.destaque {
+    background-color: aqua;
+}

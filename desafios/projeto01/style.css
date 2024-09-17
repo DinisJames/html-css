@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Courgette&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    ---cor01: #1c7c54;
+    ---cor02: #73e2a7;
+    ---cor03: #def4c6;
+    ---cor04: #1b512d;
+    ---cor05: #b1cf5f;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+   background-color: var(---cor02);
+}
+
+header {
+    padding-top: 30px;
+    background-image: linear-gradient(to bottom, var(---cor01), var(---cor04)80% );
+    min-height: 150px;
+}
+
+header > h1 {
+    font-family: "Bebas Neue", Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 2.5em;
+    font-style: normal;
+    text-align: justify;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+header > p {
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    margin: auto;
+    
+}
+
+nav {
+    background-color: var(---cor01);
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+nav > a {
+    color: var(---cor03);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(---cor03);
+    color: var(---cor04);
+}
+    
+
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: white;
+    box-shadow: 0px px 10px rgba(0, 0, 0, 0.2);
+}
+
+main h1 {
+    font-family: "Courgette", cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2em;
+    color: var(---cor04);
+    background-image: linear-gradient(to right, var(---cor01), transparent);
+}
+
+main h2 {
+    background-image: linear-gradient(to right, var(---cor02), transparent);
+}
+    
+
+
+img {
+    width: 100%;
+}
+
+img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main p { 
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.7em;
+    padding-top: 10px;
+}
+
+main strong {
+    padding: 3px 6px;
+    background-color: var(---cor02);
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(---cor01);
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(---cor02);
+}
+
+aside {
+    background-color: var(---cor05);
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.056);
+}
+
+aside ul {
+    columns: 2;
+}
+
+aside h3 {
+    background-color: var(---cor01);
+    color: var(---cor03);
+    padding: 10px;
+    margin: -5px -5px 0px -5px;
+    border-radius: 10px 10px 0px  0px;
+}
+
+footer {
+    background-color: var(---cor04);
+    padding: 7px;
+    text-align: center;
+    color: white;
+}
+
+div.video {
+    background-color: var(---cor01);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+div.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(---cor02);
+}
