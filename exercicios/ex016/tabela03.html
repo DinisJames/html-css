@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de Tabelas</title>
+    <style>
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: rgba(169, 169, 169, 0.553);
+        }
+
+        th {
+            background-color: rgba(56, 134, 108, 0.381);
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo a fazer mesclagem em tabelas</h1>
+    <table>
+        <caption>Tabela informativa</caption>
+        <thead>
+            <tr>
+                <th>Escalas</th>
+                <th colspan="2">Números</th>
+                
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Tabela 1</td>
+                <td>Assuntos</td>
+                <td rowspan="2">Formacoes</td>
+            </tr>
+            <tr>
+              
+                <td>Assuntos</td>
+                
+            </tr>
+            <tr>
+                <td colspan="2">Tabela 3</td>
+                <td>Assuntos</td>
+    
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
