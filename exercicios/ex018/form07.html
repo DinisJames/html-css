@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 7</title>
+</head>
+<body>
+    <h1>Formulario com tags que não sejam < input ></h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Selecione o Estado</label>
+            <select name="estado" id="iest">
+
+                <optgroup label="Sul">
+                    <option value="SP">São Paulo</option>
+                    <option value="MZ" selected>Mocambique</option>
+                    <option value="AN">Angola</option>
+                </optgroup>
+
+                <optgroup label="Centro">
+                    <option value="PT">Portugal</option>
+                    <option value="US">Estados Unidos</option>
+                    <option value="AU">Austrália</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Selecione a sua profissão</label>
+            <input type="text" name="profissao" id="iprof" list="prof">
+            <datalist id="prof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contabilista</option>
+                <option value="FORM">Formador</option>
+                <option value="PRO">Professor</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="MNG">Menager</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Digite a Mensagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+    </form>
+</body>
+</html>
