@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-querys.css">
     <title>Document</title>
 </head>
-<body>
+<body onresize="mudouTamanho">
     <header>
         <h1>Primeira Pagina MQ</h1>
         <i id="menu" class="material-icons" onclick="clickMenu()">menu</i>
@@ -29,6 +30,14 @@
             <p>Consequuntur blanditiis ipsam veniam enim reprehenderit molestias. Voluptatum, aut excepturi eligendi itaque, consequatur tempore fugit quisquam illo voluptatibus architecto libero vero autem ipsum sed ex odio voluptatem blanditiis. A, eveniet!</p>
     </main>
     <script>
+        function mudouTamanho () {
+            if (window.innerWidth >= 768) {
+                men.style.display = 'block'
+            }
+            else {
+                men.style.display = 'none'
+            }
+        }
         function clickMenu() {
             if (men.style.display == 'block') {
                 men.style.display = 'none'
