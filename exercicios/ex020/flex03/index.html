@@ -6,10 +6,10 @@
     <title>Flexible Box</title>
     <style>
         div.conteiner {
-            background-color: blue;
-        
-            flex-direction: column;
             display: flex;
+            background-color: blue;
+
+            flex-flow: row wrap;
         }
 
         div.item {
@@ -17,16 +17,21 @@
             padding: 10px;
             border: 1px solid white;
             background-color: brown;
+
+            flex: auto;
         }
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">Primeiro</div>
-        <div class="item">Segundo</div>
-        <div class="item">Terceiro</div>
-        <div class="item">Quarto</div>
-        <div class="item">Sexto</div>
+        <div class="item">Exemplo primeiro</div>
+        <div class="item">Exemplo segundo</div>
+        <div class="item">Exemplo Terceiro</div>
+        <div class="item">Exemplo quarto</div>
+        <div class="item">Exemplo quinto</div>
+        <div class="item">Exemplo Sexto</div>
+        <div class="item">Exemplo Setimo</div>
+        <div class="item">Exemplo Oitavo</div>
     </div>
 </body>
 </html>
