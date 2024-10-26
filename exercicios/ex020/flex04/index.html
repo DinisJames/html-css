@@ -6,28 +6,34 @@
     <title>Flexible Box</title>
     <style>
         div.conteiner {
-            display: flex;
             background-color: blue;
+
+
+            display: flex;
+            flex-flow: row nowrap;
+            height: 300px;
+            border-radius: 10px;
+            justify-content: space-around;
+            align-items: stretch;
         }
 
         div.item {
             padding: 5px;
             margin: 5px;
+            border-radius: 10px;
             text-align: center;
             border: 1px solid white;
             background-color: brown;
-
-            flex: auto;
         }
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">Primeiro</div>
-        <div class="item">Segundo</div>
-        <div class="item">Terceiro</div>
-        <div class="item">Quarto</div>
-        <div class="item">Sexto</div>
+        <div class="item">bloco flex</div>
+        <div class="item">bloco flex</div>
+        <div class="item">bloco flex</div>
+        <div class="item">bloco flex</div>
+        <div class="item">bloco flex</div>
     </div>
 </body>
 </html>
