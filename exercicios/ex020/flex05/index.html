@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centalizando Flexbox</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            background-color: darkslategrey;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        main {
+            height: 100vh;
+            width: 100vw;
+            background-color: aqua;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section {
+            height: 500px;
+            width: 350px;
+            color: white;
+            text-align: center;
+            border-radius: 20px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Faça login</h1>
+        </section>
+    </main>
+</body>
+</html>
