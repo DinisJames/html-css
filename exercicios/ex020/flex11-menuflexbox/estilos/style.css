@@ -17,17 +17,50 @@ header {
     padding: 20px;
     color: white;
     background-color: black;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header h1 {
-    margin-bottom: 10px;
+header > h1 {
+    margin-bottom: 20px;
     border: 1px dotted white;
 }
 
-header nav {
+header > nav {
     border: 1px dotted white;
+
+    display: flex;
+}
+
+header > nav > a {
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+header > nav > a:hover {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+
+    transition: background-color 0.2s;
 }
 
 main {
+    padding: 10px;
     background-color: white;
+}
+
+main > h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
