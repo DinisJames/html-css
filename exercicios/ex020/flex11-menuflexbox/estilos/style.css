@@ -25,9 +25,6 @@ header {
     align-items: center;
 }
 
-header > h1 {
-    margin-bottom: 20px;
-}
 
 header > nav {
     display: flex;
