@@ -27,12 +27,9 @@ header {
 
 header > h1 {
     margin-bottom: 20px;
-    border: 1px dotted white;
 }
 
 header > nav {
-    border: 1px dotted white;
-
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -40,7 +37,7 @@ header > nav {
 
 header > nav > a {
     padding: 10px;
-    margin: 20px;
+    margin: 5px;
     text-decoration: none;
     text-align: center;
     color: black;
@@ -59,6 +56,9 @@ header > nav > a:hover {
 
 main {
     padding: 10px;
+    width: 98vw;
+    margin: auto;
+    border-radius: 20px;
     background-color: white;
 }
 
